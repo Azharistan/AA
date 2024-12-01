@@ -1,9 +1,9 @@
-import whiteLogo from "../../public/logo/icon_white.png";
+import whiteLogo from "public/Logos/AdvanceArchLogo.png";
 const WhiteLogo = () => {
   return (
     <img
       src={whiteLogo}
-      alt="FourBrothers White Logo"
+      alt="Advance Architect Logo"
       className="m-xl-3"
       style={{ width: "70px", height: "70px" }}
     />
