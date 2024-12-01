@@ -203,17 +203,13 @@ const Home = () => {
               fontFamily="Poppins"
               display={"flex"}
               flexDirection={"row"}
-              alignItems={"center"}
-              justifyContent={"center"}
               sx={{
                 borderBottom: "1px solid rgb(101,77,52)",
                 marginBottom: "5px",
                 paddingBottom: "5px",
-                justifyContent: "center",
-                alignItems: "center",
               }}
             >
-              <img src={TKV} width={"60%"} />
+              Our Services
             </Typography>
           </Grid>
           <Grid
@@ -227,73 +223,83 @@ const Home = () => {
           >
             <Box display="flex" flexDirection="column" margin={5}>
               {renderListItem(
-                <ModelTrainingOutlined
+                <img
+                  src={enigneering}
                   style={{ color: "#372d21", marginRight: "10px" }}
                 />,
-                "Farmers training at site for crop Production & Protection"
+                "Civil Engineering",
+                [
+                  "Concrete Works",
+                  "Block Masonry",
+                  "Plastering",
+                  "Gypsum Work",
+
+                  "Tiling",
+
+                  "Wall Paints",
+                  "Gypsum and Metal Ceilings",
+                ]
               )}
               {renderListItem(
-                <Opacity style={{ color: "#372d21", marginRight: "10px" }} />,
-                "Soil & Water analysis"
-              )}
-              {renderListItem(
-                <Balance style={{ color: "#372d21", marginRight: "10px" }} />,
-                "Balance use of fertilizers"
-              )}
-              {renderListItem(
-                <ScienceOutlined
+                <img
+                  src={steel1}
                   style={{ color: "#372d21", marginRight: "10px" }}
                 />,
-                "To ensure quality seed for high yielding"
+                "Metal Works",
+                [
+                  "Fabrication and Installation of Metal Stuctures and Components",
+                ]
               )}
               {renderListItem(
-                <DataSaverOnOutlined
+                <img
+                  src={interior_desing}
                   style={{ color: "#372d21", marginRight: "10px" }}
                 />,
-                "Pest Management"
-              )}
-              {renderListItem(
-                <Schedule style={{ color: "#372d21", marginRight: "10px" }} />,
-                "Timely use of Pesticide"
+                "Interior Fit-out",
+                [
+                  "Complete Interior Decoration Services",
+                  "Tailored fit-out Solutions For Commercial and Residential Spaces",
+                ]
               )}
             </Box>
-
             <Box display="flex" flexDirection="column" margin={5}>
               {renderListItem(
-                <GrainOutlined
+                <img
+                  src={woodworking}
                   style={{ color: "#372d21", marginRight: "10px" }}
                 />,
-                "Boosting crops through proper use of Micro-nutrients"
+                "Woodwork",
+                [
+                  "Custom Wood Finishes for Flooring, Wall Paneling, and Ceiling Panels",
+                  "Elegant Furniture Manufacturing with Skilled Professional",
+                  "Specialized in High-Quality Woodwork With State of the Art Workshop In Jeddah",
+                ]
               )}
+
               {renderListItem(
-                <AttachMoney
+                <img
+                  src={mechanic}
                   style={{ color: "#372d21", marginRight: "10px" }}
                 />,
-                "Developing relations with Arthies working in the village and introducing new Arthies to farmers to improve the system of traditional crop credit"
+                "Electro-mechanical Work",
+                [
+                  "Electrical Installations",
+                  "Small Power Systems",
+                  "Bus-bar Systems",
+                  "Low Current Systems",
+                  "Cable Installations for Server Rooms of Various Capacities",
+                  "Complete Plumbing Services, including fire-fighting equipment installation",
+                  "HVAC Installation (all system types)",
+                ]
               )}
+
               {renderListItem(
-                <ShoppingBagOutlined
+                <img
+                  src={steel}
                   style={{ color: "#372d21", marginRight: "10px" }}
                 />,
-                'Special company discounts for the farmers of "Tarzan Khushal Village"'
-              )}
-              {renderListItem(
-                <PlayCircleOutline
-                  style={{ color: "#372d21", marginRight: "10px" }}
-                />,
-                "Transformation of knowledge through Agri-Experts via Video Link to make whole Pakistan “ Tarzan Khushal Village”"
-              )}
-              {renderListItem(
-                <TrendingUpOutlined
-                  style={{ color: "#372d21", marginRight: "10px" }}
-                />,
-                "Helping farmers to sell their crop at highest price in market"
-              )}
-              {renderListItem(
-                <ImportExportOutlined
-                  style={{ color: "#372d21", marginRight: "10px" }}
-                />,
-                "Introduction of Agri-channel"
+                "Steel Structures",
+                ["Design and Construction of Steel Frameworks"]
               )}
             </Box>
           </Grid>
@@ -301,10 +307,11 @@ const Home = () => {
         <Grid
           container
           justifyContent="center"
-          alignItems="center"
+          alignItems="flex-start"
           mt="10px"
           p={5}
         >
+          {/* Mandate Header */}
           <Grid item xs={12} md={width < 1800 ? 10 : 7}>
             <Typography
               align="left"
