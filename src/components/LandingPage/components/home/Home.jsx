@@ -471,35 +471,80 @@ const Home = () => {
           <Grid item xs={12} md={10}>
             <Typography
               align="left"
-              mt="20px"
-              mb="15px"
+              variant="h5"
               fontFamily="Poppins"
-              color="text.secondary"
-              textAlign="justify"
+              sx={{
+                borderBottom: "1px solid rgb(101,77,52)",
+                marginBottom: "5px",
+                paddingBottom: "5px",
+              }}
             >
-              <h3>VISION</h3>
-              <ul>
-                <li>
-                  We aim to be worldwide competitive industry in providing
-                  Innovative research based solutions and lead the market
-                  through continious resesrch innovation and best
-                  commercialization of seed, Pesticide and Micronutrient with
-                  stewardship.
-                </li>
-              </ul>
-              <h3>MISSION</h3>
-              <ul>
-                <li>
-                  To provide excellent quality and high productivity through
-                  advanced technology under the operations highly productivity
-                  through advanced technology under the operations of highly
-                  trained personnel. In our pursuit to meet our vision, the
-                  group has embarked on market penetration and diversification
-                  strategy maintaining excellence in the wake of increasing
-                  regional and intense global competition.
-                </li>
-              </ul>
+              <strong>Our Clients</strong>
             </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "wrap",
+              gap: "50px", // Spacing between logos
+              marginTop: 3,
+              width: "20%",
+
+              padding: "20px", // Optional: Padding to ensure the gradient is visible around the content
+              borderRadius: "12px", // Optional: Rounded corners for the grid
+            }}
+          >
+            {[
+              { src: Tim_Hortons_Logo, alt: "Tim_Hortons_Logo Logo" },
+              { src: Diesel_logo, alt: "Diesel Logo" },
+              { src: Formula1_Logo, alt: "Formula 1 Logo" },
+              { src: Giordano_logo_PNG1, alt: "Giordano Logo" },
+              { src: Jasmine, alt: "Jasmine Logo" },
+              { src: Caramel_Bath_and_Body_Logo, alt: "Caramel Bath & Body" },
+              { src: InHouse_logo, alt: "InHouse Logo" },
+              { src: Soliman_fakeeh_logo, alt: "Soliman_fakeeh_logo Logo" },
+
+              { src: logo, alt: "logo Logo" },
+              { src: logo2, alt: "logo2 Logo" },
+              { src: logo1713908957, alt: "logo1713908957 Logo" },
+              { src: Magrabi_Logo, alt: "Magrabi_Logo Logo" },
+              {
+                src: tavola_logo_english_narrow_padding,
+                alt: "tavola_logo_english_narrow_padding Logo",
+              },
+
+              { src: لوغو_1014x1024, alt: "لوغو_1014x1024 Logo" },
+              { src: n6a8abu8h, alt: "Client Logo" },
+              { src: Bonnon_Logo, alt: "Bonnon Logo" },
+              {
+                src: Applebees_logo,
+                alt: "Applebee's Logo",
+                bgcolor: "black",
+              },
+            ].map((logo, index) => (
+              <Box
+                key={index}
+                component="img"
+                src={logo.src}
+                alt={logo.alt}
+                sx={{
+                  maxWidth: isSmallScreen ? "40%" : "15%", // Max width for responsiveness
+                  height: "auto", // Maintain aspect ratio
+                  display: "block",
+                  // backgroundColor: "rgba(255, 255, 255, 0.9)", // Subtle white background
+                  // outline: "2px solid rgba(0, 0, 0, 0.1)", // Thin gray outline for visibility
+                  borderRadius: "4px", // Optional: Slight rounding of edges
+                  padding: "8px", // Space between image and background
+                  margin: "10px", // Space between logos
+                }}
+                loading="lazy"
+                onError={(e) => (e.target.src = "placeholder.png")}
+              />
+            ))}
           </Grid>
         </Grid>
         <Box
@@ -518,8 +563,7 @@ const Home = () => {
           }}
         ></Box>
       </Box>
-      <About id="about" />
-      <Products id="products" />
+      {/* <About id="about" /> */}
       <ScrollToTop />
       <Footer />
     </>
