@@ -123,30 +123,38 @@ const Home = () => {
               color="text.secondary"
               textAlign="justify"
             >
-              In today&apos;s rapidly changing world, where barriers are being
-              broken and distances are being diminished. We as a corporate
-              entity feel that Pakistan Agriculture is under numerous
-              challenges; climate change, agriculture without biotechnology and
-              mechanization. <br />
-              <br />
-              Four Brothers Group is striving hard to meet these challenges and
-              is committed to follow the latest trends and technologies. With
-              the pursuit of in-house and international collaborations on
-              research & development these entail a wide array of pesticides,
-              development of genes and its transformation into cotton seed.
+              Advanced Architecture Co., Ltd. is a distinguished contracting
+              firm specializing in comprehensive construction services and
+              building maintenance. With a steadfast commitment to quality and
+              craftsmanship, we uphold the highest standards in the Construction
+              & Maintenance field. Our expertise lies in serving as a single
+              point of contact and management for commercial and residential
+              construction projects, providing everything from materials to
+              labor and equipment.
               <br />
               <br />
-              Four Brothers Group will be the first company in private sector of
-              Pakistan introducing the patented and National Biosafety Committee
-              (NBC) approved Triple Gene cotton in 2020. The increase in per
-              acre yield of cotton seed will bring a revolution in the Agri
-              economy of Pakistan.
+              At Advanced Architecture Co., Ltd., we prioritize our
+              clients&apos; aspirations, working closely with them to understand
+              their unique visions. Through collaborative partnerships, we
+              deliver tailored solutions that not only meet but exceed
+              expectations. Our dedication to excellence permeates every project
+              we undertake, ensuring exceptional outcomes that stand the test of
+              time.
               <br />
               <br />
-              By the grace of Almighty, within a short period of time we have
-              managed to achieve several milestones. Winning two national awards
-              in just 10 years of operations speaks the dedication of Four
-              Brothers family towards agriculture.
+              Driven by a passion for transforming ideas into reality, we
+              combine innovation with proven practices to achieve outstanding
+              results. Whether it&apos;s new construction, renovations, or
+              ongoing maintenance, our team of professionals is committed to
+              delivering projects on time and within budget, while maintaining
+              the highest standards of safety and sustainability.
+              <br />
+              <br />
+              With a track record of success and a portfolio that speaks for
+              itself, Advanced Architecture Co., Ltd. stands ready to partner
+              with you on your next construction endeavor. Discover the
+              difference in contracting excellence with us.
+              <br />
             </Typography>
           </Grid>
           <Grid
