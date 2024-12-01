@@ -60,10 +60,14 @@ const Footer = () => {
             style={{
               paddingBottom: "10px",
             }}
-            src={agri}
+            src={AdvancedArchLogo}
           />
 
-          {/* <Typography variant="h3">Four Brothers</Typography> */}
+          <Typography variant="h5">
+            Advanced Architecture
+            <br />
+            Co. LTD.
+          </Typography>
           <br />
           <Typography
             variant=""
