@@ -1,10 +1,9 @@
 import { Box, Grid, Typography } from "@mui/material";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { makeStyles } from "@mui/styles";
 import { Link as ScrollLink } from "react-scroll";
-import { Facebook, Mail, YouTube } from "@mui/icons-material";
+import { Mail } from "@mui/icons-material";
 import AdvancedArchLogo from "/Logos/AdvanceArchLogo.png";
 
 const useStyles = makeStyles((theme) => ({
