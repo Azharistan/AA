@@ -172,16 +172,16 @@ const Home = () => {
               marginTop: width < 1200 ? "3%" : "0",
             }}
           >
-            <Card
-              mainCardImage={Chairman}
-              mainCardImageHeight={width < 1200 ? "250px" : "600px"}
-              mainCardMaxWidth="425px"
-              mainCardBoxShadow="none"
-              mainCardHeight={width < 1200 ? "250px" : "600px"}
-              mainCardMaxHeight="600px"
-              mainCardBorderRadius="25px"
-              mainCardWriteOnImage={null}
-              basicCard={false}
+            <img
+              src={Chairman}
+              alt="Chairman"
+              width={width < 1200 ? "650px" : "600px"}
+              style={{
+                borderRadius: "25px",
+                // rotate: "-1deg",
+                objectFit: "cover",
+              }}
+              height={width < 1200 ? "250px" : "800px"}
             />
           </Grid>
           {width < 1200 && width > 800 && <Grid xs={1}></Grid>}
