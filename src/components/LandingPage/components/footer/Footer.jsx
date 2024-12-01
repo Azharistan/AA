@@ -130,37 +130,58 @@ const Footer = () => {
           </Typography>
           <Typography variant="body1">
             <ScrollLink
-              to="about"
+              to="identity"
               spy={true}
               smooth={true}
               offset={-100} // Adjust offset if needed
               duration={500}
               className={classes.link}
             >
-              About Us
+              Who are we?
             </ScrollLink>
           </Typography>
-          {/* <Typography variant="body1">
-            <Typography variant="body1" component="a" href="/contactus" className={classes.link}>
-              Contact Us
-            </Typography>
-          </Typography> */}
+
           <Typography variant="body1">
             <ScrollLink
-              to="products"
+              to="services"
               spy={true}
               smooth={true}
               offset={-100} // Adjust offset if needed
               duration={500}
               className={classes.link}
             >
-              Products
+              Services
+            </ScrollLink>
+          </Typography>
+          <Typography variant="body1">
+            <ScrollLink
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-100} // Adjust offset if needed
+              duration={500}
+              className={classes.link}
+            >
+              Projects
+            </ScrollLink>
+          </Typography>
+          <Typography variant="body1">
+            <ScrollLink
+              to="clients"
+              spy={true}
+              smooth={true}
+              offset={-100} // Adjust offset if needed
+              duration={500}
+              className={classes.link}
+            >
+              Client
             </ScrollLink>
           </Typography>
         </Grid>
       </Grid>
       <Typography variant="body2" align="center" mt={4}>
-        &copy; {new Date().getFullYear()} FourBrothers. All rights reserved.
+        &copy; {new Date().getFullYear()} Advanced Architectures Co. LTD. All
+        rights reserved.
       </Typography>
     </Box>
   );
