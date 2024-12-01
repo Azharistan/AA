@@ -21,7 +21,7 @@ import colorLogo from "/Logos/AdvanceArchLogo.png";
 import whiteLogo from "/Logos/AdvanceArchLogo.png";
 import useScrollPosition from "../hooks/useScrollPosition";
 
-const navItems = [{ id: 5, title: "login", link: "/login/" }];
+const navItems = [{ id: 5, title: "Advanced Architecture", link: "#" }];
 
 const Header = (props) => {
   const { scrollY } = useScrollPosition();
