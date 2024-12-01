@@ -17,8 +17,8 @@ import {
 } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import colorLogo from "../../public/2.Tarzan.png";
-import whiteLogo from "../../public/2.Tarzan.png";
+import colorLogo from "/Logos/AdvanceArchLogo.png";
+import whiteLogo from "/Logos/AdvanceArchLogo.png";
 import useScrollPosition from "../hooks/useScrollPosition";
 
 const navItems = [{ id: 5, title: "login", link: "/login/" }];
