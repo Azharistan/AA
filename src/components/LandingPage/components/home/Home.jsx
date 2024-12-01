@@ -114,7 +114,7 @@ const Home = () => {
               fontFamily="Poppins"
               color="black"
             >
-              <strong>CHAIRMAN&apos;S MESSAGE</strong>
+              <strong>Who are we?</strong>
             </Typography>
             <Typography
               align="left"
