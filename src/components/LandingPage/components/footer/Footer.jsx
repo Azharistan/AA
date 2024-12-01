@@ -4,9 +4,8 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { makeStyles } from "@mui/styles";
 import { Link as ScrollLink } from "react-scroll";
-import { Facebook, YouTube } from "@mui/icons-material";
-import telephone from "./telephone.png";
-import agri from "../../public/4bAgri.png";
+import { Facebook, Mail, YouTube } from "@mui/icons-material";
+import AdvancedArchLogo from "/Logos/AdvanceArchLogo.png";
 
 const useStyles = makeStyles((theme) => ({
   footer: {
