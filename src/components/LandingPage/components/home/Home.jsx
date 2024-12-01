@@ -319,14 +319,156 @@ const Home = () => {
               fontFamily="Poppins"
               sx={{
                 borderBottom: "1px solid rgb(101,77,52)",
-                marginBottom: "5px",
+                marginBottom: "10px",
                 paddingBottom: "5px",
               }}
             >
               <strong>MANDATE</strong>
             </Typography>
           </Grid>
-          <Grid item xs={12} md={width < 1800 ? 10 : 7}>
+
+          {/* Vision and Mission in Two Columns */}
+          <Grid
+            container
+            item
+            xs={12}
+            md={width < 1800 ? 10 : 7}
+            spacing={4}
+            sx={{
+              mt: "20px",
+            }}
+          >
+            {/* Mission Section */}
+            <Grid item xs={12} md={6}>
+              <Box>
+                <Typography
+                  align="left"
+                  fontFamily="Poppins"
+                  color="text.primary"
+                  variant="h6"
+                  sx={{ marginBottom: "10px" }}
+                >
+                  <strong>MISSION</strong>
+                </Typography>
+                <Typography
+                  align="left"
+                  fontFamily="Poppins"
+                  color="text.secondary"
+                  textAlign="justify"
+                  variant="body1"
+                  component="div"
+                >
+                  We are committed to providing the best possible services and
+                  products to our customers, adhering strictly to quality and
+                  safety controls to ensure optimal results. Our goal is to
+                  maintain customer satisfaction with a safe environment. Our
+                  experienced professionals in general contracting, interior
+                  decoration, and fit-out work deliver superior quality both
+                  on-site and in the workshop.
+                </Typography>
+              </Box>
+            </Grid>
+            {/* Vision Section */}
+            <Grid item xs={12} md={6}>
+              <Box>
+                <Typography
+                  align="left"
+                  fontFamily="Poppins"
+                  color="text.primary"
+                  variant="h6"
+                  sx={{ marginBottom: "10px" }}
+                >
+                  <strong>VISION</strong>
+                </Typography>
+                <Typography
+                  align="left"
+                  fontFamily="Poppins"
+                  color="text.secondary"
+                  textAlign="justify"
+                  variant="body1"
+                  component="div"
+                >
+                  To blend local expertise in civil and electro-mechanical
+                  contracting with a dedicated team of qualified professionals,
+                  establishing lasting relationships by exceeding customer
+                  expectations and gaining trust through exceptional
+                  performance.
+                </Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Grid>
+
+        <Grid
+          id="projects"
+          container
+          justifyContent="center"
+          alignItems="center"
+          mt={10}
+          p={5}
+        >
+          <Grid item xs={12} md={10}>
+            <Typography
+              align="left"
+              variant="h5"
+              fontFamily="Poppins"
+              sx={{
+                borderBottom: "1px solid rgb(101,77,52)",
+                marginBottom: "5px",
+                paddingBottom: "5px",
+              }}
+            >
+              <strong>Our Projects</strong>
+            </Typography>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              flexWrap: "wrap",
+              gap: "50px", // Spacing between logos
+              marginTop: 3,
+              width: "20%",
+
+              padding: "20px", // Optional: Padding to ensure the gradient is visible around the content
+              borderRadius: "12px", // Optional: Rounded corners for the grid
+            }}
+          >
+            {projects.map((logo, index) => (
+              <Box
+                key={index}
+                component="img"
+                src={logo.src}
+                sx={{
+                  maxWidth: isSmallScreen ? "40%" : "100%", // Max width for responsiveness
+                  maxHeight: isSmallScreen ? "100%" : "250px",
+                  // height: "auto", // Maintain aspect ratio
+                  display: "block",
+                  // backgroundColor: "rgba(255, 255, 255, 0.9)", // Subtle white background
+                  // outline: "2px solid rgba(0, 0, 0, 0.1)", // Thin gray outline for visibility
+                  borderRadius: "4px", // Optional: Slight rounding of edges
+                  padding: "8px", // Space between image and background
+                  margin: "10px", // Space between logos
+                }}
+                loading="lazy"
+                onError={(e) => (e.target.src = "placeholder.png")}
+              />
+            ))}
+          </Grid>
+        </Grid>
+
+        <Grid
+          id="clients"
+          container
+          justifyContent="center"
+          alignItems="center"
+          mt={10}
+          p={5}
+        >
+          <Grid item xs={12} md={10}>
             <Typography
               align="left"
               mt="20px"
