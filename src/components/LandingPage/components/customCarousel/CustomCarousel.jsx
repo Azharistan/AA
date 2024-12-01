@@ -163,13 +163,6 @@ export default function CustomCarousel() {
               }`}
             />
           </div>
-          {/* <div>
-            <img
-              alt=""
-              src={BANNER_2}
-              className={`${classes.image} ${selectedSlide === 1 ? classes.animatedImages : ''}`}
-            />
-          </div> */}
           <div>
             <img
               alt=""
@@ -188,13 +181,6 @@ export default function CustomCarousel() {
               }`}
             />
           </div>
-          {/* <div>
-            <img
-              alt=""
-              src={BANNER_5}
-              className={`${classes.image} ${selectedSlide === 4 ? classes.animatedImages : ''}`}
-            />
-          </div> */}
           <div>
             <img
               alt=""
@@ -213,20 +199,6 @@ export default function CustomCarousel() {
               }`}
             />
           </div>
-          {/* <div>
-            <img
-              alt=""
-              src={BANNER_9}
-              className={`${classes.image} ${selectedSlide === 8 ? classes.animatedImages : ''}`}
-            />
-          </div> */}
-          {/* <div>
-            <img
-              alt=""
-              src={BANNER_10}
-              className={`${classes.image} ${selectedSlide === 9 ? classes.animatedImages : ''}`}
-            />
-          </div> */}
           <div>
             <img
               alt=""
@@ -236,13 +208,6 @@ export default function CustomCarousel() {
               }`}
             />
           </div>
-          {/* <div>
-            <img
-              alt=""
-              src={BANNER_12}
-              className={`${classes.image} ${selectedSlide === 11 ? classes.animatedImages : ''}`}
-            />
-          </div> */}
         </Carousel>
         <Box className={classes.overlay}></Box>
 
@@ -271,44 +236,10 @@ export default function CustomCarousel() {
               <br /> Architect Co.
             </h1>
           </span>
-
-          {/* <h1 className={classes.title} style={{ color: 'white', fontWeight: '800' }}>
-            FOUR
-            <br />
-            <span
-              style={{
-                color: 'white',
-                WebkitTextStroke: '1px',
-                WebkitTextFillColor: 'transparent',
-              }}
-            >
-              BROTHERS
-            </span>
-          </h1> */}
           <Typography variant="h7" ml={20} className={classes.description}>
             Civil, Electro Mechanical, Interior Decoration & Fitout, Furniture &
             Fixtures
           </Typography>
-          {/* <Button className={classes.button}>
-            <Link to={'#about'} style={{ color: 'black' }}>
-              {' '}
-              Read More
-            </Link>
-            <span className="m-1">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="10"
-                viewBox="0 0 24 10"
-                fill="none"
-              >
-                <path
-                  d="M23.4133 3.6066L20.8333 0.999933C20.7714 0.937448 20.6976 0.887851 20.6164 0.854006C20.5351 0.82016 20.448 0.802734 20.36 0.802734C20.272 0.802734 20.1849 0.82016 20.1036 0.854006C20.0224 0.887851 19.9486 0.937448 19.8867 0.999933C19.7625 1.12484 19.6928 1.29381 19.6928 1.46993C19.6928 1.64606 19.7625 1.81502 19.8867 1.93993L22.26 4.33327H0.666667C0.489856 4.33327 0.320286 4.40351 0.195262 4.52853C0.0702377 4.65355 0 4.82312 0 4.99993C0 5.17674 0.0702377 5.34631 0.195262 5.47134C0.320286 5.59636 0.489856 5.6666 0.666667 5.6666H22.3L19.8867 8.07327C19.8242 8.13524 19.7746 8.20898 19.7407 8.29022C19.7069 8.37146 19.6895 8.45859 19.6895 8.5466C19.6895 8.63461 19.7069 8.72175 19.7407 8.80299C19.7746 8.88422 19.8242 8.95796 19.8867 9.01993C19.9486 9.08242 20.0224 9.13202 20.1036 9.16586C20.1849 9.19971 20.272 9.21713 20.36 9.21713C20.448 9.21713 20.5351 9.19971 20.6164 9.16586C20.6976 9.13202 20.7714 9.08242 20.8333 9.01993L23.4133 6.43327C23.7879 6.05827 23.9982 5.54994 23.9982 5.01993C23.9982 4.48993 23.7879 3.9816 23.4133 3.6066Z"
-                  fill="#252D40"
-                ></path>
-              </svg>
-            </span>
-          </Button>  */}
         </Box>
       </Box>
     </>
