@@ -253,51 +253,33 @@ export default function CustomCarousel() {
           </div> */}
         </Carousel>
         <Box className={classes.overlay}></Box>
-        <Box className={classes.iconContainer}>
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            onClick={redirectToLinkedin}
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <LinkedIn />
-          </svg>
 
-          <br />
-          <svg
-            width="32"
-            height="32"
-            viewBox="0 0 32 32"
-            fill="none"
-            onClick={redirectToFB}
-            xmlns="http://www.w3.org/2000/svg"
-            cursor={"pointer"}
-          >
-            <FacebookOutlined />
-          </svg>
-
-          <br />
+        <Box className={classes.titleContainer}>
           <span
             style={{
-              color: "#fff",
-              position: "relative",
-              transform: "rotate(180deg)",
-              lineHeight: 1,
-              paddingTop: "0.5rem",
-              whiteSpace: "nowrap",
-              WebkitTransform: "rotate(180deg)",
-              WebkitWritingMode: "vertical-rl",
-              writingMode: "vertical-rl",
-              margin: "5px",
+              display: "flex",
+              alignItems: "center", // Aligns items vertically in the center
+              gap: "10px", // Adds space between the image and heading
             }}
           >
-            Follow us -{" "}
+            <img
+              height={"200px"}
+              src={AdvancedArch}
+              alt="Advance Architecture Logo"
+            />
+            <h1
+              style={{
+                color: "white",
+                margin: 0, // Removes default margin around <h1>
+                fontSize: "50px",
+                alignContent: "center",
+              }}
+            >
+              Advance
+              <br /> Architect Co.
+            </h1>
           </span>
-        </Box>
-        <Box className={classes.titleContainer}>
-          <img height={"200px"} src={agri} />
+
           {/* <h1 className={classes.title} style={{ color: 'white', fontWeight: '800' }}>
             FOUR
             <br />
@@ -312,7 +294,8 @@ export default function CustomCarousel() {
             </span>
           </h1> */}
           <Typography variant="h7" ml={20} className={classes.description}>
-            Research, Innovation, Commercialization.
+            Civil, Electro Mechanical, Interior Decoration & Fitout, Furniture &
+            Fixtures
           </Typography>
           {/* <Button className={classes.button}>
             <Link to={'#about'} style={{ color: 'black' }}>
