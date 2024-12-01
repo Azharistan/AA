@@ -3,7 +3,6 @@ import useWindowDimensions from "../hooks/useWindowDimensions";
 import CustomCarousel from "../customCarousel/CustomCarousel";
 import Header from "../header/Header";
 import ScrollToTop from "../ScrollToTop";
-import About from "../about/About";
 import Footer from "../footer/Footer";
 import Chairman from "/Pictures/20240529_142440.jpg";
 
@@ -31,7 +30,7 @@ import enigneering from "/Services/engineering.png";
 import interior_desing from "/Services/interior-design.png";
 import mechanic from "/Services/mechanic.png";
 import steel from "/Services/steel.png";
-import steel1 from "/Services/steel1.png";
+import steel1 from "/Services/steel (1).png";
 import woodworking from "/Services/woodworking.png";
 
 // Project Pictures
