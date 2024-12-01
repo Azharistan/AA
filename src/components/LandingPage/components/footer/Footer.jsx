@@ -94,32 +94,34 @@ const Footer = () => {
 
           <Typography variant="">
             <LocationOnOutlinedIcon className={classes.icon} />
-            Head Office:
+            Head Office: +966 56 430 69 55
             <Typography variant="body1">
-              77-D/1, First Floor Lahore Center, Main Boulevard Gulberg, Lahore,
-              Pakistan.
+              Office # 42, 4th Floor, Elite Business Center, Al-Rehab District,
+              23345, Jeddah, Saudi Arabia
             </Typography>
           </Typography>
-          <Typography variant="body1">
+          <Typography
+            variant="body1"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "5px",
+            }}
+          >
+            <Mail />
             <Typography
               variant="body1"
               component="a"
-              // href="mailto:info@fourbrothers.com.pk"
-              // className={classes.icon}
+              href="mailto:info@advancedarchsa.com"
+              className={classes.icon}
             >
-              <img
-                src={telephone}
-                width={"25px"}
-                style={{
-                  marginRight: "10px",
-                }}
-              />
-              Toll Free 0800-33-222
+              info@advancedarchsa.com
             </Typography>
           </Typography>
           <Typography variant="body1">
             <PhoneIcon className={classes.icon} />
-            +92-42-111-00-55-55
+            +966 56 430 69 55
           </Typography>
         </Grid>
         <Grid item xs={12} md={4}>
