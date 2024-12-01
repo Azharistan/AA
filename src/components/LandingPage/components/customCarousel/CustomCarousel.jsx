@@ -14,7 +14,6 @@ import BANNER_6 from "/Pictures/WhatsApp Image 2024-06-30 at 18.55.14 (2).jpg";
 // import BANNER_11 from '../../public/slider/(1).jpeg';
 
 import { Typography } from "@mui/material";
-import { FacebookOutlined, LinkedIn } from "@mui/icons-material";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -134,13 +133,6 @@ const useStyles = makeStyles(() => ({
     },
   },
 }));
-const redirectToLinkedin = () => {
-  window.location.href = "https://www.linkedin.com/company/fourbrothersgroup/";
-};
-const redirectToFB = () => {
-  window.location.href = "https://www.facebook.com/TarzanMarkaz";
-};
-
 export default function CustomCarousel() {
   const classes = useStyles();
   const [selectedSlide, setSelectedSlide] = useState(0);
