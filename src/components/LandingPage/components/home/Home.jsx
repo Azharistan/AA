@@ -94,6 +94,7 @@ const Home = () => {
           {/* {width < 1200 && width > 800 && <Grid xs={1}></Grid>} */}
           <Grid
             item
+            id="identity"
             xs={width <= 800 ? 12 : 9}
             lg={5}
             xl={4}
