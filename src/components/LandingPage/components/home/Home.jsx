@@ -66,6 +66,8 @@ const Home = () => {
     </Box>
   );
 
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
+
   return (
     <>
       <Header home={true} />
