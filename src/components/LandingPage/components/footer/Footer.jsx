@@ -44,7 +44,16 @@ const Footer = () => {
 
   return (
     <Box component="footer" className={classes.footer}>
-      <Grid container spacing={3}>
+      <Grid
+        container
+        spacing={3}
+        style={{
+          display: "flex",
+          alignContent: "center",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Grid item xs={12} md={4}>
           <img
             height={"100px"}
