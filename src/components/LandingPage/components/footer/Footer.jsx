@@ -79,28 +79,8 @@ const Footer = () => {
               padding: "10px",
             }}
           >
-            Research, Innovation, Commercialization.
+            Civil, Electro-Mechanical, Furniture & Fixture.
           </Typography>
-          {/* <Typography variant="body1">Research, Innovation, Commercialization.</Typography> */}
-          <Box mt={2}>
-            <div className={classes.textContainer}>
-              <a
-                href="https://www.linkedin.com/company/fourbrothersgroup/"
-                target="_blank"
-              >
-                <LinkedInIcon className={classes.icon} />
-              </a>
-              <a href="https://www.facebook.com/TarzanMarkaz" target="_blank">
-                <Facebook className={classes.icon} />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCEBibaeSkEMlgzKf10vwcHg"
-                target="_blank"
-              >
-                <YouTube className={classes.icon} />
-              </a>
-            </div>
-          </Box>
         </Grid>
         <Grid
           item
