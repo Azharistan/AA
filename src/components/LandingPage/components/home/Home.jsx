@@ -1,28 +1,42 @@
-import { Box, Grid, Typography } from "@mui/material";
-import {
-  ScienceOutlined,
-  DataSaverOnOutlined,
-  ImportExportOutlined,
-  Opacity,
-  ModelTrainingOutlined,
-  Balance,
-  Schedule,
-  GrainOutlined,
-  AttachMoney,
-  ShoppingBagOutlined,
-  PlayCircleOutline,
-  TrendingUpOutlined,
-} from "@mui/icons-material";
-import Card from "../customCards/CustomCards";
+import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import CustomCarousel from "../customCarousel/CustomCarousel";
 import Header from "../header/Header";
 import ScrollToTop from "../ScrollToTop";
 import About from "../about/About";
-import Products from "../products/Products";
 import Footer from "../footer/Footer";
-import Chairman from "../../public/Chairman.png";
-import TKV from "../../public/TKV.png";
+import Chairman from "/Pictures/20240529_142440.jpg";
+
+// Clients Logos
+import Applebees_logo from "/Logos/Applebees_logo.png";
+import Bonnon_Logo from "/Logos/Bonnon_Logo.png";
+import Caramel_Bath_and_Body_Logo from "/Logos/Caramel Bath and Body_Logo.png";
+import Diesel_logo from "/Logos/Diesel_logo.png";
+import Formula1_Logo from "/Logos/Formula1_Logo.png";
+import Giordano_logo_PNG1 from "/Logos/Giordano_logo_PNG1.png";
+import InHouse_logo from "/Logos/InHouse_logo.jpg";
+import Jasmine from "/Logos/Jasmine.png";
+import Soliman_fakeeh_logo from "/Logos/Soliman fakeeh_logo.png";
+import logo from "/Logos/logo.png";
+import logo2 from "/Logos/2.png";
+import logo1713908957 from "/Logos/logo1713908957.png";
+import Magrabi_Logo from "/Logos/Magrabi Logo.png";
+import tavola_logo_english_narrow_padding from "/Logos/tavola-logo-english-narrow-padding.png";
+import Tim_Hortons_Logo from "/Logos/Tim-Hortons-Logo.png";
+import لوغو_1014x1024 from "/Logos/لوغو-1014x1024.png";
+import n6a8abu8h from "/Logos/n62a8abu8h.png";
+
+// Services Icons
+import enigneering from "/Services/engineering.png";
+import interior_desing from "/Services/interior-design.png";
+import mechanic from "/Services/mechanic.png";
+import steel from "/Services/steel.png";
+import steel1 from "/Services/steel1.png";
+import woodworking from "/Services/woodworking.png";
+
+// Project Pictures
+import projects from "./project";
+
 const Home = () => {
   const { width } = useWindowDimensions();
 
