@@ -4,13 +4,13 @@ import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/material";
 import { useState } from "react";
 
-import agri from "../../public/4bAgri.png";
-import BANNER_1 from "../../public/slider/ (1).webp";
-import BANNER_2 from "../../public/slider/ (2).webp";
-import BANNER_3 from "../../public/slider/ (3).webp";
-import BANNER_4 from "../../public/slider/ (4).webp";
-import BANNER_5 from "../../public/slider/ (5).webp";
-import BANNER_6 from "../../public/slider/ (6).webp";
+import AdvancedArch from "/Logos/AdvanceArchLogo.png";
+import BANNER_1 from "/Pictures/WhatsApp Image 2024-06-30 at 17.43.25 (3).jpg";
+import BANNER_2 from "/Pictures/WhatsApp Image 2024-06-30 at 18.42.43 (3).jpg";
+import BANNER_3 from "/Pictures/WhatsApp Image 2024-06-30 at 18.42.46.jpg";
+import BANNER_4 from "/Pictures/WhatsApp Image 2024-06-30 at 18.42.49.jpg";
+import BANNER_5 from "/Pictures/WhatsApp Image 2024-06-30 at 18.55.14 (1).jpg";
+import BANNER_6 from "/Pictures/WhatsApp Image 2024-06-30 at 18.55.14 (2).jpg";
 // import BANNER_11 from '../../public/slider/(1).jpeg';
 
 import { Typography } from "@mui/material";
