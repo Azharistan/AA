@@ -39,18 +39,30 @@ import projects from "./project";
 
 const Home = () => {
   const { width } = useWindowDimensions();
-
-  const renderListItem = (icon, text) => (
-    <Box display="flex" mt="20px" mb="15px">
-      {icon}
-      <Typography
-        align="left"
-        fontFamily="Poppins"
-        color="text.secondary"
-        textAlign="justify"
-      >
-        {text}
-      </Typography>
+  const renderListItem = (icon, text, point_list) => (
+    <Box display="flex" flexDirection="column" mt={2} mb={2}>
+      <Box display="flex" alignItems="flex-start" gap="10px">
+        <Box width={"35px"} height={"auto"}>
+          {icon}
+        </Box>
+        <Typography
+          fontFamily="Poppins"
+          color="black"
+          textAlign="justify"
+          variant="h5"
+        >
+          {text}
+        </Typography>
+      </Box>
+      {point_list && point_list.length > 0 && (
+        <Box component="ul" ml={4} mt={1}>
+          {point_list.map((point, index) => (
+            <Box component="li" key={index} sx={{ fontFamily: "Poppins" }}>
+              {point}
+            </Box>
+          ))}
+        </Box>
+      )}
     </Box>
   );
 
