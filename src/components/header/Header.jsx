@@ -54,25 +54,15 @@ const Header = (props) => {
           transition: "background-color 0.3s ease-in-out",
         }}
       >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="Open Drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{
-              mr: 2,
-              color:
-                props.home === true
-                  ? scrollY === 0
-                    ? "white"
-                    : "black"
-                  : "black",
-              display: { lg: "none" },
-            }}
-          >
-            <MenuIcon />
-          </IconButton>
+        <Toolbar
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
+            padding: "0 20px",
+          }}
+        >
           <Box
             sx={{
               mr: 2,
