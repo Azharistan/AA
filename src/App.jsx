@@ -1,14 +1,10 @@
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-
-import Router from "./routes/sections";
 import ThemeProvider from "./theme";
+import Home from "/src/components/home/Home";
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      <Home />
     </ThemeProvider>
   );
 }
