@@ -70,7 +70,7 @@ const Header = (props) => {
               display: "block",
             }}
           >
-            {renderLogo(scrollY)}
+            {renderLogo()}
           </Box>
           <Typography
             variant="h6"
