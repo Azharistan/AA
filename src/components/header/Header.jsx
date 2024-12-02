@@ -77,8 +77,7 @@ const Header = (props) => {
               <Button
                 key={item.id}
                 sx={{
-                  color:
-                    props.home === true && scrollY === 0 ? "white" : "black",
+                  color: "black",
                   padding: { lg: "10px", xl: "15px" },
                 }}
               >
