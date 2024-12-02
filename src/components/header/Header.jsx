@@ -66,13 +66,8 @@ const Header = (props) => {
           <Box
             sx={{
               mr: 2,
-              color:
-                props.home === true
-                  ? scrollY === 0
-                    ? "white"
-                    : "black"
-                  : "black",
-              display: { lg: "none" },
+              color: "black",
+              display: "block",
             }}
           >
             {renderLogo(scrollY)}
