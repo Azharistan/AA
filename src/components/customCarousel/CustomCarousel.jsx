@@ -155,7 +155,7 @@ export default function CustomCarousel() {
                 alt=""
                 src={banner}
                 className={`${classes.image} ${
-                  selectedSlide === 0 ? classes.animatedImages : ""
+                  selectedSlide === index ? classes.animatedImages : ""
                 }`}
               />
             </div>
