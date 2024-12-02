@@ -7,7 +7,6 @@ import {
   CssBaseline,
   Divider,
   Drawer,
-  IconButton,
   List,
   ListItem,
   ListItemButton,
@@ -15,9 +14,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import colorLogo from "/Logos/AdvanceArchLogo.png";
-import whiteLogo from "/Logos/AdvanceArchLogo.png";
 import useScrollPosition from "../hooks/useScrollPosition";
 
 const navItems = [{ id: 5, title: "Advanced Architecture", link: "#" }];
