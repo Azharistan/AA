@@ -2,9 +2,9 @@ import { Box, Grid, Typography, useMediaQuery } from "@mui/material";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import CustomCarousel from "../customCarousel/CustomCarousel";
 import Header from "../header/Header";
-import ScrollToTop from "../ScrollToTop";
+// import ScrollToTop from "../ScrollToTop";
 import Footer from "../footer/Footer";
-import Chairman from "/Pictures/20240529_142440.jpg";
+import Chairman from "/Pictures/20240529_142440.webp";
 
 // Clients Logos
 import Applebees_logo from "/Logos/Applebees_logo.png";
@@ -563,7 +563,7 @@ const Home = () => {
         ></Box>
       </Box>
       {/* <About id="about" /> */}
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Footer />
     </>
   );
