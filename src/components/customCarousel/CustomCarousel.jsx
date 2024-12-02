@@ -163,32 +163,47 @@ export default function CustomCarousel() {
         </Carousel>
         <Box className={classes.overlay}></Box>
 
-        <Box className={classes.titleContainer}>
-          <span
+        <Box
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            padding: "0 5%",
+          }}
+        >
+          <img
+            src={AdvancedArch}
+            alt="Advance Architecture Logo"
             style={{
-              display: "flex",
-              alignItems: "center", // Aligns items vertically in the center
-              gap: "10px", // Adds space between the image and heading
+              height: "100px",
+              maxWidth: "100%",
+              objectFit: "contain",
+            }}
+          />
+          <Typography variant="h3" component="h1" color="white">
+            Advanced Architecture Co. Ltd.
+          </Typography>
+          <Typography
+            color="white"
+            style={{
+              // marginTop: theme.spacing(2),
+              fontSize: "1rem",
+              lineHeight: "1.5",
+              // [theme.breakpoints.down("md")]: {
+              //   fontSize: "0.9rem",
+              // },
+              // [theme.breakpoints.down("sm")]: {
+              //   fontSize: "0.8rem",
+              // },
             }}
           >
-            <img
-              height={"200px"}
-              src={AdvancedArch}
-              alt="Advance Architecture Logo"
-            />
-            <h1
-              style={{
-                color: "white",
-                margin: 0, // Removes default margin around <h1>
-                fontSize: "50px",
-                alignContent: "center",
-              }}
-            >
-              Advanced
-              <br /> Architecture Co. Ltd.
-            </h1>
-          </span>
-          <Typography variant="h7" ml={20} className={classes.description}>
             Civil, Electro Mechanical, Interior Decoration & Fitout, Furniture &
             Fixtures
           </Typography>
