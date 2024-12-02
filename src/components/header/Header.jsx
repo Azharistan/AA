@@ -29,8 +29,8 @@ const Header = (props) => {
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
-  const renderLogo = (scrollY) => {
-    const logoSrc = scrollY === 0 && props.home ? whiteLogo : colorLogo;
+  const renderLogo = () => {
+    const logoSrc = colorLogo;
     return (
       <img
         src={logoSrc}
