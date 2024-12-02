@@ -36,7 +36,10 @@ import woodworking from "/Services/woodworking.png";
 // Project Pictures
 import projects from "./project";
 
+import useScrollPosition from "../hooks/useScrollPosition";
+
 const Home = () => {
+  const { scrollY } = useScrollPosition();
   const { width } = useWindowDimensions();
   const renderListItem = (icon, text, point_list) => (
     <Box display="flex" flexDirection="column" mt={2} mb={2}>
@@ -69,7 +72,8 @@ const Home = () => {
 
   return (
     <>
-      <Header home={true} />
+      {scrollY === 0 ? null : <Header home={true} />}
+
       <CustomCarousel />
 
       <Box>
@@ -442,7 +446,7 @@ const Home = () => {
                 component="img"
                 src={logo.src}
                 sx={{
-                  maxWidth: isSmallScreen ? "40%" : "100%", // Max width for responsiveness
+                  maxWidth: "100%", // Max width for responsiveness
                   maxHeight: isSmallScreen ? "100%" : "250px",
                   // height: "auto", // Maintain aspect ratio
                   display: "block",
@@ -453,7 +457,7 @@ const Home = () => {
                   margin: "10px", // Space between logos
                 }}
                 loading="lazy"
-                onError={(e) => (e.target.src = "placeholder.png")}
+                // onError={(e) => (e.target.src = "placeholder.png")}
               />
             ))}
           </Grid>
