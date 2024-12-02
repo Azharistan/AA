@@ -72,18 +72,7 @@ const Header = (props) => {
           >
             {renderLogo()}
           </Box>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", sm: "none", md: "none", lg: "block" },
-              cursor: "pointer",
-            }}
-          >
-            {renderLogo(scrollY)}
-          </Typography>
-          <Box sx={{ display: { xs: "none", lg: "block" } }}>
+          <Box sx={{ display: "block" }}>
             {navItems.map((item) => (
               <Button
                 key={item.id}
