@@ -5,12 +5,7 @@ import { Box } from "@mui/material";
 import { useState } from "react";
 
 import AdvancedArch from "/Logos/AdvanceArchLogo.png";
-import BANNER_1 from "/Pictures/WhatsApp Image 2024-06-30 at 17.43.25 (3).webp";
-import BANNER_2 from "/Pictures/WhatsApp Image 2024-06-30 at 18.42.43 (3).webp";
-import BANNER_3 from "/Pictures/WhatsApp Image 2024-06-30 at 18.42.46.webp";
-import BANNER_4 from "/Pictures/WhatsApp Image 2024-06-30 at 18.42.49.webp";
-import BANNER_5 from "/Pictures/WhatsApp Image 2024-06-30 at 18.55.14 (1).webp";
-import BANNER_6 from "/Pictures/WhatsApp Image 2024-06-30 at 18.55.14 (2).webp";
+import bannerImages from "./BannerImages";
 // import BANNER_11 from '../../public/slider/(1).jpeg';
 
 import { Typography } from "@mui/material";
@@ -154,60 +149,17 @@ export default function CustomCarousel() {
           interval={4000}
           onChange={handleSlideChange}
         >
-          <div>
-            <img
-              alt=""
-              src={BANNER_1}
-              className={`${classes.image} ${
-                selectedSlide === 0 ? classes.animatedImages : ""
-              }`}
-            />
-          </div>
-          <div>
-            <img
-              alt=""
-              src={BANNER_2}
-              className={`${classes.image} ${
-                selectedSlide === 1 ? classes.animatedImages : ""
-              }`}
-            />
-          </div>
-          <div>
-            <img
-              alt=""
-              src={BANNER_3}
-              className={`${classes.image} ${
-                selectedSlide === 2 ? classes.animatedImages : ""
-              }`}
-            />
-          </div>
-          <div>
-            <img
-              alt=""
-              src={BANNER_4}
-              className={`${classes.image} ${
-                selectedSlide === 3 ? classes.animatedImages : ""
-              }`}
-            />
-          </div>
-          <div>
-            <img
-              alt=""
-              src={BANNER_5}
-              className={`${classes.image} ${
-                selectedSlide === 4 ? classes.animatedImages : ""
-              }`}
-            />
-          </div>
-          <div>
-            <img
-              alt=""
-              src={BANNER_6}
-              className={`${classes.image} ${
-                selectedSlide === 5 ? classes.animatedImages : ""
-              }`}
-            />
-          </div>
+          {bannerImages.map((banner, index) => (
+            <div key={index}>
+              <img
+                alt=""
+                src={banner}
+                className={`${classes.image} ${
+                  selectedSlide === 0 ? classes.animatedImages : ""
+                }`}
+              />
+            </div>
+          ))}
         </Carousel>
         <Box className={classes.overlay}></Box>
 
